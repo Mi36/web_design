@@ -37,13 +37,40 @@ img {
 
 /* evide dot itt varan karanam ith elementsinu kodutha class aanu */
 .navbar {
-  background-color: aqua;
+  background-color: blueviolet;
   color: black;
-  height: 70px;
+  height: 80px;
 }
 .container {
   max-width: 1100px;
   margin: 0 auto;
   overflow: auto;
   padding: 0 40px;
+}
+
+.navbar .ul {
+  display: flex;
+  flex-direction: row;
+}
+/* navbaril ulla a kal */
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+/* navbarile a kku mukaliloode hove cheyyumbol ee style aayirikkum */
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+/* below code is to use if flex is inside navbar style like this. otherwise not */
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
 }
